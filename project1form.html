@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Event Registration Form</title>
+</head>
+<body style="background-color:lightyellow;">
+<form method="post" enctype="multipart/form-data">
+
+<label for="name">Name: </label>
+<input type="text" id="name" name="name" required>
+<br><br>
+
+<label for="email">Mail Id: </label>
+<input type="email" id="email" name="email" required>
+<br><br>
+
+<label for="gender">Gender: </label>
+<input type="radio" name="gender" value="female">female
+<input type="radio" name="gender" value="male">male
+<br><br>
+
+<label for="tel">Phone Number: </label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required> 
+<br><br>
+
+
+<label for="events">Events: </label>
+<select id="events" name="events">
+<option value="code-a-thon">Code-A-Thon</option>
+<option value="hackverse">HackVerse</option>
+<option value="techbattle">Tech Battle</option>
+<option value="techriddle">Tech Riddle</option>
+<option value="pictionary">Pictionary</option>
+<option value="neuralnexus">Neural Nexus</option>
+<option value="wordedifice">Word Edifice</option>
+<option value="adzap">Adzap</option>
+</select>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

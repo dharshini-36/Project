@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Catch The Ball Game</title>
+<style>
+body{
+background-color:darkseagreen;
+}
+
+nav ul{
+background-color: #004225;
+display:flex;
+justify-content:center;
+padding:0;
+}
+
+nav ul li{
+list-style:none;
+font-weight:bold;
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+padding:15px 0;
+display:block;
+}
+
+nav ul li a:hover{
+background-color:#195905;
+}
+
+.sidebar{
+position:fixed;
+left:-300px;
+top:0;
+width:300px;
+height:100vh;
+background-color:#004225;
+transition:0.2s;
+padding-top:20px;
+z-index:100;
+}
+
+.sidebar a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+backfround-color:#195905;
+}
+
+
+.nav-games:hover .sidebar{
+left:0;
+}
+
+
+h2{
+color:#014421;
+text-align:center;
+font-family:centurygothic;
+}
+
+h3{
+color:#004225;
+text-align:left;
+font-family:centurygothic;
+}
+
+p{
+color:#black;
+font-size:23px;
+font-family:centurygothic;
+}
+</style>
+</head>
+
+<body>
+<nav>
+<ul>
+<li><a href="css p1 sign in.html">Sign In</a></li>
+<li><a href="css project 1 .html">Home</a></li>
+
+<li class="nav-games">
+<a href="#">Games ▼</a>
+<ul class="sidebar">
+<li><a href="css project 27-3-25.html">Easy</a></li>
+<li><a href="css p1 medium.html">Medium</a></li>
+<li><a href="css p1 hard.html">Hard</a></li>
+</ul>
+</li>
+
+<li><a href="support css p1.html">Support</a></li>
+
+</ul>
+</nav>
+
+<h2>Catch The Ball</h2>
+
+<h3><strong>About The Game:</strong></h3>
+<p><i>🎉Hello  Welcome to Catch The Ball game.🎉<br>You have "3" different levels in this game like<br> --Easy<br>--Medium<br>--Hard</i></p><br>
+
+<h3><strong>How to Play:</strong></h3>
+<p><i>A moving box will appear on the screen. Your goal is to click the box while it moves. If you successfully click it, you'll see a message saying, "Congratulations! You got it!" After that, a restart button will appear, allowing you to play again.<br>
+
+Good luck and have fun!<br><br>
+You have a video demo also!!!</i></p>
+<video controls height="600" width="800">
+<source src="E:\DHARSHINI\HTML\html files\templates\game demo.mp4" type="video/mp4">
+</video>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Feedback</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#5f9ea0;">
+
+<div class="d-flex flex-row justify-content-between align-items-center w-100 p-2 bg-light rounded" >
+		<div class="m-0 fw-bold">Dashboard</div>
+		<div class="d-flex gap-5">
+		<a href="bp1courses.html">Courses</a>
+		<span class="glyphicon glyphicon-bell ml-3"></span>
+		<a href="bp1home.html"><span class="glyphicon glyphicon-user ml-3"></span></a>
+	    </div>
+	</div>
+<br><br>	
+	
+<div class="container">
+    <div class="d-flex justify-content-center">
+	<table class="table table-striped table-condensed table-bordered bg-light rounded" style="width: 70%;">
+		<thead>
+		<tr>
+			<th>Name</th>
+			<th>Courses Completed</th>
+			<th>Rating</th>
+			<th>progress</th>
+		</tr>
+		</thead>
+		<tbody>
+		 <tr>
+                    <td>Dharshini</td>
+                    <td>4</td>
+                    <td><span class="badge">3.5</span></td>
+                    <td>
+                        <span class="glyphicon glyphicon-stats ml-3"></span>
+                        <span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod1" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod1" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> Dharshini<br>
+                                           <strong>Time Spent on Platform:</strong> 2hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Presentation Skills<br>
+                                           <strong>Badge Earned:</strong> Fast Learner <span class="glyphicon glyphicon-flash"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+			<td>Akshaya</td>
+			<td>5</td>
+			<td><span class="badge">4.8</span></td>
+			<td><span class="glyphicon glyphicon-stats ml-3"></span>
+			
+			<span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod2" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod2" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> Akshaya<br>
+                                           <strong>Time Spent on Platform:</strong> 3.5hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Presentation Skills,Business Communication<br>
+                                           <strong>Badge Earned:</strong>Top Scorer <span class="glyphicon glyphicon-star"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+			<td>Keerthana</td>
+			<td>4</td>
+			<td><span class="badge">4</span></td>
+			<td><span class="glyphicon glyphicon-stats ml-3"></span>
+			<span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod3" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod3" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> Keerthana<br>
+                                           <strong>Time Spent on Platform:</strong> 3hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Java Script<br>
+                                           <strong>Badge Earned:</strong>High Attendance <span class="glyphicon glyphicon-calendar"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+			<td>Sofia</td>
+			<td>6</td>
+			<td><span class="badge">4.5</span></td>
+			<td>	<span class="glyphicon glyphicon-stats ml-3"></span>
+			<span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod4" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod4" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> Sofia<br>
+                                           <strong>Time Spent on Platform:</strong> 4hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Presentation Skills, Python<br>
+                                           <strong>Badge Earned:</strong>Consistent Learner <span class="glyphicon glyphicon-time"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+		<tr>
+			<td>Kiruthiga</td>
+			<td>7</td>
+			<td><span class="badge">5</span></td>
+			<td>	<span class="glyphicon glyphicon-stats ml-3"></span>
+			<span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod5" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod5" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> Kiruthiga<br>
+                                           <strong>Time Spent on Platform:</strong> 4.5hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Presentation Skills, Python, business Communication, Java Script<br>
+                                           <strong>Badge Earned:</strong>All-Rounder <span class="glyphicon glyphicon-certificate"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+				
+			<tr>
+			<td>SubbuLakshmi</td>
+			<td>4</td>
+			<td><span class="badge">4.5</span></td>
+			<td>	<span class="glyphicon glyphicon-stats ml-3"></span>
+			<span class="ml-5 glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#mod6" style="cursor: pointer;"></span>
+
+                        <div class="modal fade" id="mod6" role="dialog">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">User Details</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Name:</strong> SubbuLaksmi<br>
+                                           <strong>Time Spent on Platform:</strong> 2hr/day<br>
+                                           <strong>Status:</strong> Active<br>
+										   <strong>Courses Completed:</strong> HTML, Effective Listening, CSS, Presentation Skills<br>
+                                           <strong>Badge Earned:</strong>Most Improved <span class="glyphicon glyphicon-stats"></span></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+		</tbody>
+	</div>
+	</table>
+</div>
+</body>
+</html>

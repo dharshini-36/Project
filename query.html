@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewreport" content="width=device-width,initial-scale=1.0">
+	<title>Help</title>
+</head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    height: 100vh;                       
+    background-color: grey; 
+
+form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px; 
+    background:#222222;
+    text-align: center;
+	color:white;
+}
+
+</style>
+<body>
+
+
+<form>
+<label for="uname"><b>User Name</b></label>
+<input type="text" id="uname" name="uname" placeholder="Enter Your User Name" required>
+<br><br>
+
+<label for="email"><b>Email Id</b></label>
+<input type="text" id="email" name="email" placeholder="Enter your E-mail" required>
+<br><br>
+
+ <label for="comment"><b>Queries:</b></label>
+      <textarea cols="30" rows="10" name="comment" placeholder="Enter your queries"></textarea>
+      <br><br>
+<input type="checkbox" name="terms" value="terms of service">Do you have subscription
+<br><br>
+<h3>For Any Other Queries Contact this Number: <b>9345493854 </b></h3>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale="1.0">
+<title> Personal Info</title>
+</head>
+<body style="background-color:beige;">
+<form method="post" enctype="multipart/form-data">
+<label for="name">Name: </label>
+<input type="text" id="name" name="name" required>
+<br><br>
+
+<label for="email">Mail Id: </label>
+<input type="email" id="email" name="email" required>
+<br><br>
+
+<label for="pwd">Password: </label>
+<input type="password" id="pwd" name="pwd" required>
+<br><br>
+
+<label for="gender">Gender: </label>
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<br><br>
+
+<label for="interest">Interests: </label>
+<input type="checkbox" name="Interests" value="Music">Music
+<input type="checkbox" name="Interests" value="Sports">Sports
+<input type="checkbox" name="Interests" value="Online Games">Online Games
+<input type="checkbox" name="Interests" value="Cooking">Cooking
+<input type="checkbox" name="Interests" value="Dance">Dance
+<br><br>
+
+<label for="country">Country: </label>
+<select id="country" name="country">
+<option value="India">India</option>
+<option value="South Korea">South Korea</option>
+<option value="USA">USA</option>
+<option value="France">France</option>
+<option value="Thailland">Thailand</option>
+</select> 
+<br><br>
+
+<label for="comments">Comments: </label>
+<textarea id="comments" name="comments" rows="4" cols="5">
+</textarea>
+ <br><br>
+
+<label for="file">File Upload: </label>
+<input type="file" id="file" name="file">
+<br><br>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+

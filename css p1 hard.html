@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Catch The Ball</title>
+<link rel="icon" size="32x32" type="image/x-icon" href="https://www.favicon.cc/logo3d/1013736.png">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:darkseagreen;
+overflow:hidden;
+}
+
+.game-container{
+width:80vw;
+height:80vh;
+border:3px solid white;
+position:relative;
+overflow:hidden;
+}
+
+.box{
+width:50px;
+height:50px;
+background:red;
+position:absolute;
+border-radius:10px;
+cursor:pointer;
+animation: movebox 3s infinite alternate ease-in-out;
+}
+
+@keyframes movebox{
+0%{
+top:10%;
+left:10%;
+}
+
+25%{
+top:70%;
+left:20%;
+}
+
+50%{
+top:40%;
+left:80%;
+}
+
+75%{
+top:60%;
+left:30%;
+}
+
+100%{
+top:20%;
+left:90%;
+}
+}
+
+.box:target{
+visibility:hidden;
+}
+
+.msg{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:20px;
+font-weight:bold;
+color:white;
+visibility:hidden;
+}
+
+#box1:target+.msg{
+visibility:visible;
+}
+
+.restart{
+position:absolute;
+top:60%;
+left:50%;
+transform:translate(-50%,-50%);
+padding:10px 20px;
+font-size:18px;
+font-weight:bold;
+color:white;
+background:black;
+border-radius:6px;
+text-decoration:none;
+visibility:hidden;
+}
+
+#box1:target~.restart{
+visibility:visible;
+}
+
+</style>
+</head>
+<body>
+
+<div class="game-container">
+      <a href="#box1" class="box" id="box1"></a>
+	  <div class="msg">🎉🎉Congratulations you got it🎉🎉</div>
+	  <a href="#" class="restart">Restart</a>
+</div>
+<h2>
+<a href="css project 1 .html">Back</a>
+</h2>
+
+</body>
+</html>
+
+	  
+
+
+
