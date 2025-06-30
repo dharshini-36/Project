@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Garamond;
+      padding: 15px;
+      margin: 25px;
+      background:#c2c2ff;;
+    }
+
+    h3 {
+      text-align: center;
+      color: #00003d;
+    }
+
+    .calculator {
+      max-width: 450px;
+      margin: auto;
+      background: #f6ebff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #e9ccff;
+      margin-top: 90px;
+    }
+
+    #display {
+      width: 100%;
+      height: 40px;
+      font-size: 19px;
+      text-align: right;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 7px;
+ 
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .equal {
+      background-color: #cc8aff;
+    }
+
+    .clear {
+      background-color: #ff7f7f;
+    }
+
+    body.light {
+      background-color: #f0f8ff;
+      color: black;
+    }
+
+    .light .calculator {
+      background-color: #fff;
+    }
+
+    .light button {
+      background-color: #dcdcdc;
+    }
+
+    .light button:hover {
+      background-color: #c0c0c0;
+    }
+
+    body.dark {
+      background-color: #140024;
+      color: #f0f0f0;
+    }
+
+    .dark .calculator {
+      background-color: #140024;
+      box-shadow: 0 0 20px #000;
+    }
+
+    .dark button {
+      background-color: #6500b3;
+      color: white;
+    }
+	
+	body.dark input[type="text"] {
+		color:white;
+	}
+    .dark button:hover {
+      background-color: #555;
+    }
+
+    .theme-switch {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    select {
+      padding: 5px;
+      border-radius: 5px;
+    }
+	.back-btn {
+			display:block;
+			padding:10px 20px;
+			background-color:#ca85ff;
+			color:white;
+			border:none;
+			border-radius:10px;
+			font-size:18px;
+			margin:20px auto;
+			align-items:center;
+		}
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="theme-switch">
+      <label for="theme">Choose Theme:</label>
+      <select id="theme" onchange="switchTheme()">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="clear">C</button>
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="appendValue('*')">*</button>
+      <button onclick="appendValue('-')">-</button>
+
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('+')">+</button>
+
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="calculate()" class="equal">=</button>
+
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('0')" style="grid-column: span 2;">0</button>
+      <button onclick="appendValue('.')">.</button>
+    </div>
+</div>
+
+  <script>
+    function appendValue(val) {
+      document.getElementById("display").value += val;
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+
+    function calculate() {
+      try {
+        const result = eval(document.getElementById("display").value);
+        document.getElementById("display").value = result;
+      } catch {
+        document.getElementById("display").value = "Error";
+      }
+    }
+
+    function switchTheme() {
+      const selectedTheme = document.getElementById("theme").value;
+      document.body.className = selectedTheme;
+    }
+	function goHome() {
+			history.back();
+		}
+  </script>
+  
+  <div class="text-center">
+		<button onclick="goHome()" class="back-btn"> Back To Home </button>
+	</div>
+</body>
+</html>
